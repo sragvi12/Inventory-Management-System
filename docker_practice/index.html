@@ -1,0 +1,105 @@
+<!-- IMS/index.html --> 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.ytimg.com/vi/CwyyTpfkIbw/maxresdefault.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-color:rgb(0, 255, 170);
+      width: 1000px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 20px;
+      color:rgb(196, 22, 22);
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    marquee{
+      color: rgb(255, 255, 0);
+      font-size: 30px;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <marquee direction = "right"> Welcome To Inventory Management System</marquee>
+  <div id="container">
+    <form id="addProductForm">
+      <label for="id">Product ID:</label>
+      <input type="number" id="id" name="id" required>
+
+      <label for="name">Product Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" required>
+
+      <label for="brand">Brand:</label>
+      <input type="text" id="brand" name="brand" required>
+
+      <label for="manufacturer">Manufacturer:</label>
+      <input type="text" id="manufacturer" name="manufacturer" required>
+
+      <label for="unitOfMeasure">Unit of Measure:</label>
+      <input type="text" id="unitOfMeasure" name="unitOfMeasure" required>
+
+      <label for="costPrice">Cost Price:</label>
+      <input type="number" id="costPrice" name="costPrice" required>
+
+      <label for="sellingPrice">Selling Price:</label>
+      <input type="number" id="sellingPrice" name="sellingPrice" required>
+
+      <button type="submit">Add Product</button>
+    </form>
+    <div id="productList"></div>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
